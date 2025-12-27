@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="styles.css">
+    <title>SneekLab</title>
+</head>
+<body>
+
+ <section class="h-auto pt-4 pb-8" id="home">
+    <!--header-->
+
+        <div class="bg-[#cecece] flex justify-evenly p-[1rem] fixed left-0 right-0 z-[50]">
+            <div class="div">
+
+                <div class="flex items-center ">
+                 <i class="fas fa-shopping-bag"></i> 
+                <h1 class="text-lg"><a href="index.html"> SneekLab</a>
+                   </h1>
+                </div>
+
+            </div>
+
+            <div class="flex items-center">
+
+                  <div class="relative"><i class="fas fa-shopping-cart ml-6"></i>
+                  <div class="absolute bottom-4 right-0 text-red-500 update-cart-quantity-icon">0</div>
+                </div>
+               
+        </div>
+        </div>
+
+        <!--render page-->
+
+        <div class="pt-[150px] pl-[1rem]">
+            <div class="text-center mb-8 fixed shadow-lg p-4 left-0 right-0 bg-blue-500 text-white top-[15%] z-[15%]">
+  <h1 class="update-cart-checkout-page"></h1>
+
+            </div>
+            <div class="mt-4 mb-8 fixed text-white top-[15%] z-[50] text-blue-500 div-display-html">
+                <h1 class="text-2xl js-total-price-html">ksh0</h1>
+            </div>
+          
+            <div class="js-render-list-html">
+
+
+
+            </div>
+        
+
+          
+
+            <div class="pt-[2rem]">
+                <h1 class="text-md mb-8">Tax included and shipping calculated at checkout</h1>
+                <button class="px-12 py-2 bg-blue-500 text-white rounded-lg"><a href="checkout.html">Checkout</a></button>
+            </div>
+
+        </div>
+
+</section>
+
+<!--
+<section class="p-6">
+    <div class="text-justify mb-8">
+  <h1 class="text-2xl">You may also like</h1>
+    </div>
+    <div>
+        <div>
+
+            <div class="mb-2">
+                <img src="https://eu.rosefieldwatches.com/cdn/shop/files/0008201_587871d6-9595-48f9-8fce-b238dba9a848_1200x.jpg?v=1722950153" alt="" class="h-[300px] rounded-full border-0">
+            </div>
+
+            <div>
+                <h1 class="text-md mb-3">All black watch</h1></div>
+            <div>
+                <input type="text" placeholder="enter color" class="border-b outline-none mb-6 px-2">
+            </div>
+            <div class="text-md mb-3"><h1>ksh 350</h1></div>
+            <div><button class="p-2 bg-[#a52a2a] text-white">add to cart</button></div>
+        </div>
+    </div>
+</section>
+
+-->
+
+
+
+
+
+</body>
+<script type="module" src="cart/cart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</html>

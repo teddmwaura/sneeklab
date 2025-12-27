@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+   
+    <title>SneekLab</title>
+</head>
+<body>
+ <section class="bg-[#cecece] h-[120vh] pt-4" id="home">
+
+        <div class="bg-white flex justify-evenly p-[1rem] fixed left-0 right-0 z-[100]">
+            <div>
+
+                <div class="flex items-center ">
+                 <i class="fas fa-shopping-bag"></i> 
+                <h1 class="text-lg"><a href="index.html">SneekLab</a></h1>
+                </div>
+
+            </div>
+            <div class="div">
+                <nav>
+                    <ul class="flex display-grid-html">
+                        <li class="ml-6 cursor-pointer relative active"><a href="#home">products</a></li>
+                        <li class="ml-6 cursor-pointer relative"><a href="#products">orders</a></li>
+                        <li class="ml-6 cursor-pointer relative"><a href="#services">overview</a></li>
+                        <li class="ml-6 cursor-pointer relative"><a href="#about">customers</a></li>
+                        <li class="ml-6 cursor-pointer relative"><a href="#news">marketing tools</a></li>
+                        <li class="ml-6 cursor-pointer relative"><a href="#contact">settings</a></li>
+                        <div class="hidden div-close-html">
+                            <i class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+                        </div>
+                       
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden div-menu-html">
+                <i class="fa-solid fa-bars text-3xl cursor-pointer ml-6"></i>
+            </div>
+        </div>
+
+        <div class="mt-[150px] text-center flex items-center justify-center flex-col div-display-top-html">
+    <h1 class="text-3xl mb-8 text-admin">Admin Dashboard - Add Products</h1>
+  <form id="product-form" class="flex flex-col product-form">
+    <input type="text" id="name" placeholder="Product Name" required class="py-4 px-16 mb-4 outline-none name">
+    <input type="number" id="price" placeholder="Price" required class="py-4 px-16 mb-4 outline-none price">
+    <input type="text" id="image" placeholder="Image URL" required class="py-4 px-16 mb-4 outline-none image">
+
+    <button type="submit" class="py-4 px-12  bg-[#a52a2a] text-white image">Add Product</button>
+  </form>
+        </div>
+        </section>
+
+<section class="h-auto pt-4 pb-8" id="products">
+    <div class="mt-[3rem] ml-6 section-html-top">
+         <h2 class="text-3xl text-center mb-8 converse-text">Our Converse Collection</h2>
+        <p class="text-gray-500 text-lg mb-2 checkout-html">checkout our latest products</p>
+        <h1 class="text-4xl mb-4 new-arrivals-text">New Arrivals</h1>
+    </div>
+
+    <div class="grid grid-cols-4 pt-8 px-4 gap-4 products-container-html">
+
+ </div>
+  <!--<div class=" text-center p-4 shadow-lg">product deleted successfully</div>-->
+</section>
+
+</body>
+<script type="module" src="admin/admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</html>

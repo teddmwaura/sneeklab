@@ -22,7 +22,8 @@ export function deleteFromAdmin(){
             localStorage.setItem('products', JSON.stringify(products))
 
             appendToMainJs()
-            deleteFromAdmin()
+           // deleteFromAdmin()
+            window.location.reload();
         })
     })
 }

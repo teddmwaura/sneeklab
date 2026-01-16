@@ -1,65 +1,81 @@
-import { updateQuantityIcon } from "./updateCartIcon.js";
-import { showErrorDiv } from "./warningDiv.js";
-import { appendToCartPage } from "./appendProductCart.js";
-import { calculateTotalCost } from "./calculateTotalPrice.js";
+import { updateQuantityIcon } from "./updateQuantityIcon.js";
+import { renderToCart } from "./renderToCart.js";
+import { calculateCost } from "./calculateTotalCost.js";
 import { removeFromCart } from "./removeFromCart.js";
-import { minusCartFromCart } from "./minusCart.js";
-import { plusCartFromCart } from "./plusCart.js";
+import { minusFromCart } from "./minusFromCart.js";
+import { plusFromCart } from "./plusCart.js";
+
 
 export function addToCart(){
     const products = JSON.parse(localStorage.getItem('products')) || [];
 
-    const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-button')
 
-    addToCartButtons.forEach((button) =>{
-        button.addEventListener('click', () =>{
-          const color = document.querySelector('.input-color-html').value
-          const size = document.querySelector('.input-size-html').value
+addToCartButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+   
 
-            document.querySelector('.input-size-html').value = '';
-            document.querySelector('.input-color-html').value = ''
-         
+    const productId = button.dataset.productId;
 
-            if(!size && !color){
-                showErrorDiv();
-                return
-            }
+    const productCard = button.closest('.product-card')
+    const sizeInput = productCard.querySelector('.input-size-html');
+    const colorInput = productCard.querySelector('.input-color-html');
 
-            const productId = button.dataset.productId;
+    const size = sizeInput.value.trim();
+    const color = colorInput.value.trim();
 
-            const matchingItem = products.find(p => p.productId === productId)
+    // 1️⃣ Validate inputs
+    if (!size || !color) {
+      alert('Please select size and color');
+      return;
+    }
 
-           
+    const validSizes = ['36', '37', '38', '39', '40', '41', '42'];
+    if (!validSizes.includes(size)) {
+      alert('Please enter a valid size');
+      return;
+    }
 
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    // 2️⃣ Find product
+    const product = products.find(p => p.productId === productId);
+    if (!product) return;
 
-            const cartItem = cart.find(c => c.productId === productId && c.size === size && c.color === color)
+    // 3️⃣ Get cart
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-            if(cartItem){
-                cartItem.quantity += 1;
-            }
-            else{
-                 cart.push({
-                    ...matchingItem,
-                    size,
-                    color,
-                    quantity: 1
-                })
-            }
-            console.log(cart)
+    // 4️⃣ Check if same product + size + color exists
+    const cartItem = cart.find(item =>
+      item.productId === productId &&
+      item.size === size &&
+      item.color === color
+    );
 
-            localStorage.setItem('cart', JSON.stringify(cart))
+    if (cartItem) {
+      cartItem.quantity += 1;
+    } else {
+      cart.push({
+        ...product,
+        size,
+        color,
+        quantity: 1
+      });
+    }
 
-            updateQuantityIcon()
-                
-            
-        })
-    })
+    // 5️⃣ Save cart
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // 6️⃣ Reset inputs
+    sizeInput.value = '';
+    colorInput.value = '';
+
     updateQuantityIcon()
+  });
+});
+
 }
-appendToCartPage()
-calculateTotalCost()
+renderToCart()
 updateQuantityIcon()
+calculateCost()
 removeFromCart()
-minusCartFromCart()
-plusCartFromCart()
+minusFromCart()
+plusFromCart()

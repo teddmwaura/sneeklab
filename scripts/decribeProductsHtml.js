@@ -6,7 +6,7 @@ const seeMoreButtons = document.querySelectorAll('.see-more-button-html');
 seeMoreButtons.forEach((button)=>{
   button.addEventListener('click', () =>{
     
-    const products = JSON.parse(localStorage.getItem('products'))
+    const products = JSON.parse(localStorage.getItem('products')) || []
 
     const productId = button.dataset.productId
 

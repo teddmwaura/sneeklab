@@ -1,33 +1,23 @@
-import { calculateTotalCost } from "./calculateTotalPrice.js";
-import { updateQuantityIcon } from "./updateCartIcon.js";
-
-
 export function removeFromCart(){
-    const removeButtons = document.querySelectorAll('.close-btn')
+   const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    removeButtons.forEach((button)=>{
-        button.addEventListener('click', ()=>{
-            console.log('deleted item')
-             let cart = JSON.parse(localStorage.getItem('cart')) || [];
+   const deleteButtons = document.querySelectorAll('.remove-from-cart')
 
-            const productId = button.dataset.productId
+   deleteButtons.forEach((button)=>{
+    button.addEventListener('click', ()=>{
+        const productId = button.dataset.productId
+        console.log(productId)
 
-            const cartItem = cart.findIndex(c => c.productId === productId)
+    const cartItem = cart.findIndex(p => p.productId === productId)
 
-            if(cartItem !== -1){
-                cart.splice(cartItem, 1)
-            }
-            localStorage.setItem('cart', JSON.stringify(cart))
+    if(cartItem > -1){
+        cart.splice(cartItem, 1)
+    }
 
-            
-            calculateTotalCost()
-            updateQuantityIcon()
-          
-         
-     
-        
+        localStorage.setItem('cart', JSON.stringify(cart))
 
-        })
+        console.log(cart)
+         window.location.reload();
     })
-   
+   })
 }

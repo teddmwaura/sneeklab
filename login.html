@@ -1,30 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>signup</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Login</title>
 </head>
-<body>
-    <div class="text-center pt-[100px] pl-[400px]">
-        <div class="border p-4 w-[50%] rounded-md">
-            <h1 class="text-4xl mb-[3rem]">Welcome Back</h1>
-            <div class="">
-            <input type="text" placeholder="email adress" class="border px-8 py-2 mb-6 outline-none"><br>
-            <input type="password" placeholder="password" class="border px-8 py-2 mb-6 outline-none"></div>
-            <div class="mb-6">
-                <input type="checkbox" class="mr-2">Remember for the 30 days
-                <a href="" class="text-[#4242db] ml-8">forgot password</a>
-            </div>
-            <button class="px-[6rem] py-2 bg-[#4242db] rounded-md text-white mb-6">login</button><br>
-            <button  class="px-[6rem] py-2 border rounded-md  mb-6"><i class="fab fa-google text-l"></i>
-sign in with google</button>
-            <p>don't have an account <a href="signup.html" class="text-[#4242db]">signup</a></p>
-        </div>
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+
+  <!-- Login Card -->
+  <form class="w-full max-w-md bg-white p-6 sm:p-8 rounded-xl shadow login-form">
+
+    <h1 class="text-2xl sm:text-3xl  text-center mb-8">
+      Welcome Back
+    </h1>
+
+    <!-- Email -->
+    <input
+      type="text"
+      placeholder="Email address"
+      class="w-full border px-4 py-3 mb-5 outline-none rounded email"
+      required
+    />
+
+    <!-- Password -->
+    <input
+      type="password"
+      placeholder="Password"
+      class="w-full border px-4 py-3 mb-5 outline-none rounded password"
+      required
+    />
+
+    <!-- Remember + Forgot -->
+    <div class="flex items-center justify-between mb-6 text-sm">
+      <label class="flex items-center gap-2">
+        <input type="checkbox">
+        Remember for 30 days
+      </label>
+
+      <a href="#" class="text-[#4242db] hover:underline">
+        Forgot password?
+      </a>
     </div>
-    
+
+    <!-- Login Button -->
+    <button
+      type="submit"
+      class="w-full py-3 bg-[#4242db] text-white rounded-md  hover:opacity-90 transition mb-4"
+    >
+      Login
+    </button>
+
+    <!-- Signup -->
+    <p class="text-center text-sm">
+      Don’t have an account?
+      <a href="signup.html" class="text-[#4242db] hover:underline">
+        Sign up
+      </a>
+    </p>
+
+    <!-- Message -->
+    <p
+      id="login-message"
+      class="opacity-0 transition-opacity text-sm text-center mt-4 text-gray-500"
+    ></p>
+
+  </form>
+
+  <!-- Script -->
+  <script type="module" src="signup/login.js"></script>
+
 </body>
 </html>

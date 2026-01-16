@@ -26,6 +26,7 @@ function addProductToAdmin(){
             productImage
         }
 
+
         products.push(product)
 
         localStorage.setItem('products', JSON.stringify(products));

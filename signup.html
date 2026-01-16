@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>signup</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Sign Up</title>
 </head>
-<body>
-    <div class="text-center pt-[100px] pl-[400px]">
-        <div class="border p-4 w-[50%] rounded-md">
-            <p class="text-lg text-gray-500 mb-6">Please enter your details</p>
-            <h1 class="text-4xl mb-[3rem]">Welcome</h1>
-            <div class="">
-            <input type="text" placeholder="email adress" class="border px-8 py-2 mb-6 outline-none"><br>
-            <input type="password" placeholder="password" class="border px-8 py-2 mb-6 outline-none"></div>
-            <button class="px-[6rem] py-2 bg-[#4242db] rounded-md text-white mb-6">signup</button><br>
-            <button  class="px-[6rem] py-2 border rounded-md  mb-6"><i class="fab fa-google text-l"></i>
-sign in with google</button>
-            <p>arleady have an account <a href="login.html" class="text-[#4242db]">login</a></p>
-        </div>
-    </div>
-    
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+
+  <!-- Signup Card -->
+  <form class="w-full max-w-md bg-white p-6 sm:p-8 rounded-xl shadow product-form">
+
+    <p class="text-sm text-gray-500 text-center mb-2">
+      Please enter your details
+    </p>
+
+    <h1 class="text-2xl sm:text-3xl text-center mb-8">
+      Welcome
+    </h1>
+
+    <!-- Username -->
+    <input
+      type="text"
+      placeholder="Username"
+      class="w-full border px-4 py-3 mb-4 outline-none rounded username-html"
+      required
+    />
+
+    <!-- Email -->
+    <input
+      type="email"
+      placeholder="Email address"
+      class="w-full border px-4 py-3 mb-4 outline-none rounded email-html"
+      required
+    />
+
+    <!-- Password -->
+    <input
+      type="password"
+      placeholder="Password"
+      class="w-full border px-4 py-3 mb-6 outline-none rounded password-html"
+      required
+    />
+
+    <!-- Signup Button -->
+    <button
+      type="submit"
+      class="w-full py-3 bg-[#4242db] text-white rounded-md hover:opacity-90 transition mb-4"
+    >
+      Sign Up
+    </button>
+
+    <!-- Login Redirect -->
+    <p class="text-center text-sm">
+      Already have an account?
+      <a href="login.html" class="text-[#4242db] hover:underline">
+        Login
+      </a>
+    </p>
+
+    <!-- Message -->
+    <p
+      id="authentication-message"
+      class="opacity-0 transition-opacity duration-500 text-sm text-center mt-4"
+    ></p>
+
+  </form>
+
+  <!-- Script -->
+  <script type="module" src="signup/signup.js"></script>
+
 </body>
 </html>

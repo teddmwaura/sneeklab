@@ -1,38 +1,76 @@
-import { calculateTotalPice } from "./handlePayments.js";
-import { calculateParcelPrice } from "./handlePayments.js";
+import { displayItems } from "./checkoutDisplay.js";
+import { calculateCost } from "../cart/calculateTotalCost.js";
 
-const cart = JSON.parse(localStorage.getItem('cart'))
 
-let acccumulatorPattern = '';
+function sendToWhatsApp(message) {
+  const businessNumber = '254742037243';
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${businessNumber}?text=${encodedMessage}`;
+  window.open(whatsappURL, '_blank');
+}
 
-cart.forEach((product) =>{
-    acccumulatorPattern +=
-    `
-                    <div><img src="${product.image}" alt="" class="h-[100px]"></div>
-                    <div class="pl-8">
-                    <div><h1>${product.name}</h1></div>
-                    <div><h1>${product.color}</h1></div>
-                    <div><h1>size: ${product.size}</h1></div>
-                    <div><h1>Qty: ${product.quantity}</h1></div>
-                    </div>
-                
-    `
+function handleCheckoutProcess() {
+  const checkoutForm = document.querySelector('.checkout-form');
+  if (!checkoutForm) return;
 
-    const containerHtml = document.querySelector('.container-contain-html-js')
+  checkoutForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    if(containerHtml){
-        containerHtml.innerHTML = acccumulatorPattern;
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+    if (!currentUser || !currentUser.userName) {
+      alert('Please login first before proceeding to checkout.');
+      return;
     }
 
-    const displayPrice = document.querySelector('.js-display-price')
+    const pickPoint = document.querySelector('.pickup-point').value.trim();
+    const phoneNumber = document.querySelector('.phone-number').value.trim();
 
-    if(displayPrice){
+      const phoneRegex = /^(07\d{8}|01\d{8})$/;
+  if (!phoneRegex.test(phoneNumber)) {
+    alert('Enter a valid Kenyan phone number');
+    return;
+  }
 
-        const totalPrice = cart.reduce((sum, item) => sum + (item.quantity * product.price), 0)
+    const deliveryOption = document.querySelector(
+      'input[name="delivery"]:checked'
+    );
 
-        displayPrice.innerHTML = `Amount Payable: ${totalPrice}`
+    if (!deliveryOption) {
+      alert('Please select a delivery option.');
+      return;
     }
-})
 
-calculateTotalPice()
-calculateParcelPrice()
+    const deliveryType = deliveryOption.value; // 'thika' or 'outside'
+    const deliveryFee = deliveryType === 'thika' ? 50 : 150;
+
+    const deliveryZoneText =
+      deliveryType === 'thika'
+        ? 'Along Thika Road'
+        : 'Outside Thika Road';
+
+    const productDetails = 'Raised Converse - Black - Size 32 - Qty 2';
+
+    const message = `
+NEW ORDER (Cash on Delivery)
+---------------------------
+Name: ${currentUser.userName}
+Phone: ${phoneNumber}
+Pickup Point: ${pickPoint}
+Delivery Zone: ${deliveryZoneText}
+Delivery Fee: ${deliveryFee} KES
+Product: ${productDetails}
+`;
+
+    console.log(message);
+
+    sendToWhatsApp(message);
+    alert('your order has been placed and received, you will get a call shortly')
+    checkoutForm.reset()
+  });
+}
+
+
+handleCheckoutProcess()
+displayItems()
+calculateCost()

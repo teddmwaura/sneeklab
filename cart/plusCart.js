@@ -1,24 +1,25 @@
-import { updatingUi } from "./renderUpdateUI.JS";
 
-export function plusCartFromCart(){
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+import { renderToCart } from "./renderToCart.js";
 
-    const allPlusButtons = document.querySelectorAll('.add-button-cart-html')
+export function plusFromCart() {
+  const plusButtons = document.querySelectorAll('.plus-button-html');
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    allPlusButtons.forEach((button) =>{
-        button.addEventListener('click', () =>{
-            const productId = button.dataset.productId
+  plusButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const productId = button.dataset.productId;
 
-            const increaseQTY = cart.find(p => p.productId === productId)
+      const itemIndex = cart.findIndex(
+        item => item.productId === productId
+      );
 
-            if(increaseQTY && increaseQTY.quantity > 0){
-                increaseQTY.quantity += 1;
-            }
+      if (itemIndex === -1) return;
 
-            localStorage.setItem('cart', JSON.stringify(cart))
+      // ✅ Increase quantity
+      cart[itemIndex].quantity += 1;
 
-           updatingUi();
-        })
-    })
-   
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderToCart();
+    });
+  });
 }

@@ -8,9 +8,7 @@ export function displayItems(){
         `<img
           src="${product.productImage}"
           class="h-[100px] object-contain"
-          alt=""
-        />
-
+          alt=""/>
         <div>
         <p><strong>Product Name:</strong> ${product.productName}</p>
           <p><strong>Product Color:</strong> ${product.color}</p>

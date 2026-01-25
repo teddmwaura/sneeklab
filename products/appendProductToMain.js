@@ -10,7 +10,7 @@ function appendToMainWebsite(){
     
     products.forEach((product) =>{
         accumulatorPattern += `
-        <div class="p-4 product-card w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+        <div class="p-4 product-card w-full ">
   <div class="bg-[#efefef] flex justify-center items-center">
     <img 
       src="${product.productImage}" 

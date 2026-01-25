@@ -1,7 +1,7 @@
 import { generateProductId } from "./generateUniqueId.js"
 import { appendToMainJs } from "./appendToAdminPage.js"
 import { deleteFromAdmin } from "./deleteFromPage.js"
-import { handleToggleButton } from "./toggleMenuButton.js"
+
 
 function addProductToAdmin(){
     const productForm = document.querySelector('.product-form')
@@ -18,6 +18,7 @@ function addProductToAdmin(){
         if(!productImage || !productName || !productPrice){
             return;
         }
+       
 
         const product = {
             productId: generateProductId(),
@@ -25,6 +26,7 @@ function addProductToAdmin(){
             productPrice,
             productImage
         }
+        console.log(product)
 
 
         products.push(product)
@@ -43,4 +45,4 @@ function addProductToAdmin(){
 
 addProductToAdmin()
 deleteFromAdmin()
-handleToggleButton()
+

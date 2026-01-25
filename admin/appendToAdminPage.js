@@ -19,11 +19,11 @@ export function appendToMainJs(){
 
   <!-- Product Info -->
   <div class="text-center">
-    <p class="mb-2 text-base sm:text-lg font-medium product-html-text">
+    <p class="mb-2 text-base sm:text-md product-html-text">
       ${product.productName}
     </p>
 
-    <p class="mb-4 text-yellow-500 text-base sm:text-lg font-semibold product-price-text">
+    <p class="mb-4 text-yellow-500 text-base sm:text-md product-price-text">
       Ksh ${product.productPrice}
     </p>
 

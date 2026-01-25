@@ -2,13 +2,23 @@ import { addToCart } from "../cart/cart.js";
 import { descriptionProductsHTML } from "../scripts/decribeProductsHtml.js";
 import { updateQuantityIcon } from "../cart/updateQuantityIcon.js";
 
+fetch('./productsSneeklab.json')
+  .then(res => res.json())
+  .then(data => {
+    window.jsonProducts = data;
+    appendToMainWebsite(); // 🔥 move it here
+  });
 
 function appendToMainWebsite(){
     let products = JSON.parse(localStorage.getItem('products')) || [];
 
+    const jsonProducts = window.jsonProducts || [];
+
+    const allProducts = [...jsonProducts, ...products]
+
     let accumulatorPattern = ''; // meaning its gonna be a string
     
-    products.forEach((product) =>{
+    allProducts.forEach((product) =>{
         accumulatorPattern += `
         <div class="p-4 product-card w-full ">
   <div class="bg-[#efefef] flex justify-center items-center">
@@ -20,7 +30,7 @@ function appendToMainWebsite(){
   </div>
 
   <div class="mt-2">
-    <p class="mb-2 text-base sm:text-lg font-medium html-product-name">
+    <p class="mb-2 text-base sm:text-md html-product-name">
       ${product.productName}
     </p>
 
@@ -61,16 +71,14 @@ function appendToMainWebsite(){
   </div>
 </div>
 
-        `;
-
-        const appendContainer = document.querySelector('.products-container-html')
-
-        if(appendContainer){
-            appendContainer.innerHTML = accumulatorPattern;
-        }
+        `;  
     });
+    const appendContainer = document.querySelector('.products-container-html')
+
+    if(appendContainer){
+        appendContainer.innerHTML = accumulatorPattern;
+    }
 }
-appendToMainWebsite()
 descriptionProductsHTML()
 addToCart()
 updateQuantityIcon()

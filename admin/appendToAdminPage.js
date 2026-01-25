@@ -1,9 +1,13 @@
 export function appendToMainJs(){
     const products = JSON.parse(localStorage.getItem('products')) || []
 
+    const jsonProducts = window.jsonProducts || [];
+
+    const allProducts = [...jsonProducts, ...products]
+
     let accumulatorPattern = '';
 
-    products.forEach((product) =>{
+    allProducts.forEach((product) =>{
         accumulatorPattern +=
         `
     <div class="p-4 rounded-xl bg-white shadow delete-from-page-html">
@@ -39,10 +43,11 @@ export function appendToMainJs(){
 
         `
 
-        const productContainer = document.querySelector('.products-container-html')
-
-        if(productContainer){
-            productContainer.innerHTML = accumulatorPattern;
-        }
+       
     })
+    const productContainer = document.querySelector('.products-container-html')
+
+    if(productContainer){
+        productContainer.innerHTML = accumulatorPattern;
+    }
 }

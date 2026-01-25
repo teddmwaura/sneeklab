@@ -2,6 +2,16 @@ import { generateProductId } from "./generateUniqueId.js"
 import { appendToMainJs } from "./appendToAdminPage.js"
 import { deleteFromAdmin } from "./deleteFromPage.js"
 
+let jsonProducts = [];
+
+fetch('./productsSneeklab.json')
+  .then(res => res.json())
+  .then(data => {
+    jsonProducts = data;
+    window.jsonProducts = data; // 🔥 important
+    appendToMainJs();
+  });
+
 
 function addProductToAdmin(){
     const productForm = document.querySelector('.product-form')

@@ -1,26 +1,23 @@
 
-export function descriptionProductsHTML(){
-const seeMoreButtons = document.querySelectorAll('.see-more-button-html');
+export function descriptionProductsHTML() {
+  document.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('see-more-button-html')) return;
 
+    const productId = e.target.dataset.productId;
 
-seeMoreButtons.forEach((button)=>{
-  button.addEventListener('click', () =>{
-    
-    const products = JSON.parse(localStorage.getItem('products')) || []
+    const localProducts = JSON.parse(localStorage.getItem('products')) || [];
+    const jsonProducts = window.jsonProducts || [];
+    const allProducts = [...jsonProducts, ...localProducts];
 
-    const productId = button.dataset.productId
+    const matchingItem = allProducts.find(
+      p => String(p.productId) === String(productId)
+    );
 
-    const matchingItem = products.find(p => p.productId === productId)
-
-    console.log(matchingItem)
-    if(matchingItem){
-     localStorage.setItem('selectedProduct', JSON.stringify(matchingItem))
+    if (matchingItem) {
+      localStorage.setItem('selectedProduct', JSON.stringify(matchingItem));
+      window.location.href = 'description.html';
+    } else {
+      console.warn('Product not found for description page');
     }
-
-   window.location.href='description.html';
-  })
-})
-
-
-
+  });
 }

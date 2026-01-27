@@ -1,16 +1,88 @@
 
 
 [
-    {
-      "productId": 12345,
-      "productName": "raised converse",
-      "productPrice": 1500,
-      "productImage": "https://www.converse.in/media/catalog/product/m/7/m7650c_a_107x1_1.jpg"
-    },
-    {
-      "productId": 223456,
-      "productName": "all black raised converse",
-      "productPrice": 1200,
-      "productImage": "https://d3d71ba2asa5oz.cloudfront.net/12036969/images/mens%20converse%20chuck%20taylor%20all%20star%20black%20hi%20top%20lace%20up%20(2).jpg"
-    }
-  ]
+  {
+    "productId": 12345,
+    "productName": "raised converse",
+    "productPrice": 1500,
+    "productImage": "https://www.converse.in/media/catalog/product/m/7/m7650c_a_107x1_1.jpg",
+    "productColor": "white"
+  },
+  {
+    "productId": 223456,
+    "productName": "all black raised converse",
+    "productPrice": 1200,
+    "productImage": "https://d3d71ba2asa5oz.cloudfront.net/12036969/images/mens%20converse%20chuck%20taylor%20all%20star%20black%20hi%20top%20lace%20up%20(2).jpg",
+    "productColor": "black"
+  },
+  {
+    "productId": 56893,
+    "productName": "double sole black converse",
+    "productPrice": 1350,
+    "productImage": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw43a87537/images/a_08/560845C_A_08X1.jpg?sw=406&strip=false",
+    "productColor": "black"
+  },
+  {
+    "productId": 690874,
+    "productName": "flat brown converse",
+    "productPrice": 1100,
+    "productImage": "https://www.famousfootwear.com/blob/product-images/20000/18/03/0/18030_pair_feed1000.jpg",
+    "productColor": "brown"
+  },
+  {
+    "productId": 6909653,
+    "productName": "raised light green converse",
+    "productPrice": 1400,
+    "productImage": "https://i.ebayimg.com/images/g/fJ8AAOSwSUpmp9Zd/s-l1200.jpg",
+    "productColor": "light green"
+  },
+  {
+    "productId": 2234908,
+    "productName": "blue raised converse",
+    "productPrice": 1250,
+    "productImage": "https://converse.static.n7.io/media/catalog/product/cache/c2eb1f0db702462ce5dab3d57b75c6e4/m/9/m9622_e_107x1378.jpg",
+    "productColor": "blue"
+  },
+  {
+    "productId": 1340987,
+    "productName": "red flat converse",
+    "productPrice": 1050,
+    "productImage": "https://images.journeys.com/images/products/1_4401_FS.JPG",
+    "productColor": "red"
+  },
+  {
+    "productId": 395890,
+    "productName": "leather black raised converse",
+    "productPrice": 1600,
+    "productImage": "https://i.pinimg.com/236x/f2/94/d8/f294d80adc0e8bb18e1cbaae851aec8d.jpg",
+    "productColor": "black"
+  },
+  {
+    "productId": 12345695,
+    "productName": "leather raised red converse",
+    "productPrice": 1550,
+    "productImage": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwa8371a70/images/a_08/A18997C_A_08X1.jpg?sw=406&strip=false",
+    "productColor": "red"
+  },
+  {
+    "productId": 223456750,
+    "productName": "white flat converse",
+    "productPrice": 1200,
+    "productImage": "https://tekkietown.co.za/cdn/shop/files/82b11495d7ce15202dc582c561a83f6a.jpg?v=1758192041&width=1445",
+    "productColor": "white"
+  },
+  {
+    "productId": 230976,
+    "productName": "flat black converse",
+    "productPrice": 1250,
+    "productImage": "https://cdn-images.farfetch-contents.com/15/94/17/22/15941722_54786867_600.jpg",
+    "productColor": "black"
+  },
+  {
+    "productId": 230977,
+    "productName": "flat double sole black converse",
+    "productPrice": 1450,
+    "productImage": "https://skipperbar.co.za/media/catalog/product/cache/8e71962534cb112d3996d77af375c1d8/a/l/all779b-converse-all-star-black-560250c-v1_jpg.jpg",
+    "productColor": "black"
+  }
+]

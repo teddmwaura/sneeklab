@@ -1,6 +1,6 @@
 import { displayItems } from "./checkoutDisplay.js";
 import { calculateToCheckoutJs } from "./calculateToCheckout.js";
-
+import { updateUserName } from "../scripts/updateUserName.js";
 
 function sendToWhatsApp(message) {
   const businessNumber = '254742037243';
@@ -97,3 +97,4 @@ console.log(message)
 handleCheckoutProcess()
 displayItems()
 calculateToCheckoutJs()
+updateUserName()

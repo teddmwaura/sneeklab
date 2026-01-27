@@ -1,5 +1,5 @@
 export function calculateCost(){
-    console.log('read from cart')
+  
 
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     

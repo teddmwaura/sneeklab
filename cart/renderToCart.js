@@ -1,6 +1,7 @@
 
 import { removeFromCart } from "./removeFromCart.js";
 
+
 export function renderToCart(){
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -27,11 +28,24 @@ export function renderToCart(){
        <div>
         <h2>${cartItem.size}</h2>
     </div>
-    <div class="flex">
-        <h2 class="cursor-pointer mr-3 plus-button-html">+</h2>
-        <h2 class="update-data-html">${cartItem.quantity}</h2>
-        <h2 class="cursor-pointer ml-3 minus-button-html">-</h2>
-    </div>
+<div class="flex">
+  <h2 
+    class="cursor-pointer mr-3 plus-button-html"
+    data-product-id="${cartItem.productId}"
+  >
+    +
+  </h2>
+
+  <h2 class="update-data-html">${cartItem.quantity}</h2>
+
+  <h2 
+    class="cursor-pointer ml-3 minus-button-html"
+    data-product-id="${cartItem.productId}"
+  >
+    -
+  </h2>
+</div>
+
     
         `
     })
@@ -42,5 +56,6 @@ export function renderToCart(){
         renderToMainHtml.innerHTML = accumulatorPattern;
     }
    removeFromCart()
+ 
 
 }

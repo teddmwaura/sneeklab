@@ -4,17 +4,20 @@ import { calculateCost } from "./calculateTotalCost.js";
 import { removeFromCart } from "./removeFromCart.js";
 import { minusFromCart } from "./minusFromCart.js";
 import { plusFromCart } from "./plusCart.js";
+import { updateUserName } from "../scripts/updateUserName.js";
 
 fetch('./productsSneeklab.json')
   .then(res => res.json())
   .then(data => {
     window.jsonProducts = data;
-    addToCart(); 
+    addToCart()
   });
 
 export function addToCart() {
   const products = JSON.parse(localStorage.getItem('products')) || [];
   const jsonProducts = window.jsonProducts || [];
+
+
 
   const allProducts = [...jsonProducts, ...products];
 
@@ -23,8 +26,9 @@ export function addToCart() {
 
   addToCartButtons.forEach(button => {
     button.addEventListener('click', () => {
-
-      const productId = Number(button.dataset.productId); // ✅ FIX 1
+      console.log('add to cart button')
+      const productId = Number(button.dataset.productId); // ✅ FIX 
+      console.log(productId)
 
       const productCard = button.closest('.product-card');
       const sizeInput = productCard.querySelector('.input-size-html');
@@ -87,4 +91,5 @@ updateQuantityIcon();
 calculateCost();
 removeFromCart();
 minusFromCart();
-plusFromCart();
+plusFromCart()
+updateUserName()

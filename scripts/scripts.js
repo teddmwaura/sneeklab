@@ -4,6 +4,7 @@ import { handleSmoothScroll } from "./handleSmoothScroll.js";
 import { swiperJsHtml } from "./handleSwiperMovt.js";
 import { updateUserName } from "./updateUserName.js";
 import { handleToggleButton } from "./toggleMenuBar.js";
+import { searchProductJs } from "./searchProduct.js";
 
 swiperJsHtml();
 toggleListItems();
@@ -11,3 +12,4 @@ swiperProductJs()
 handleSmoothScroll();
 updateUserName()
 handleToggleButton()
+searchProductJs()

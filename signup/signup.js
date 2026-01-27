@@ -53,10 +53,12 @@ localStorage.setItem('userDetails', JSON.stringify(userDetails));
 // ✅ Store the **currently logged-in user** separately
 localStorage.setItem('currentUser', JSON.stringify(newUser));
 
-      
+      window.location.href = 'index.html';
 
       form.reset();
       resolve();
+
+      
 
     }, { once: true });
   });

@@ -10,10 +10,10 @@ export function describeProductPage(){
 
 
 displayDescriptionProduct.innerHTML = `
-           <div class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10">
+         
 
   <!-- Image -->
-  <div class="flex justify-center w-full md:w-1/2">
+  <div class="flex justify-center">
     <img 
       src="${product.productImage}" 
       alt="${product.productName}" 
@@ -22,8 +22,8 @@ displayDescriptionProduct.innerHTML = `
   </div>
 
   <!-- Text content -->
-  <div class="w-full md:w-1/2 text-center md:text-left">
-    <h1 class="text-xl sm:text-2xl font-semibold mb-3">
+  <div class="text-center">
+    <h1 class="text-xl sm:text-2xl mb-3">
       ${product.productName}
     </h1>
 
@@ -37,7 +37,6 @@ displayDescriptionProduct.innerHTML = `
     </p>
   </div>
 
-</div>
 
                     `
 }

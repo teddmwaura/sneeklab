@@ -7,6 +7,7 @@ fetch('./productsSneeklab.json')
   .then(data => {
     window.jsonProducts = data;
     appendToMainWebsite(); // 🔥 move it here
+    addToCart()
   });
 
 function appendToMainWebsite(){
@@ -58,7 +59,7 @@ function appendToMainWebsite(){
       </button>
     </div>
 
-    <p class="mb-3 text-yellow-500 text-base sm:text-lg font-semibold html-product-price">
+    <p class="mb-3 text-yellow-500 text-base sm:text-lg html-product-price">
       Ksh ${product.productPrice}
     </p>
 
@@ -80,5 +81,4 @@ function appendToMainWebsite(){
     }
 }
 descriptionProductsHTML()
-addToCart()
 updateQuantityIcon()

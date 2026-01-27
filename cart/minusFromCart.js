@@ -4,11 +4,11 @@ export function minusFromCart(){
 
     minusButton.forEach((button) =>{
         button.addEventListener('click', ()=>{
-         console.log('minus from cart')
+       
            
             const productId = button.dataset.productId
 
-         const minusProduct = cart.findIndex(p => p.productId === productId)
+         const minusProduct = cart.findIndex(p => String(p.productId) === String(productId))
 
          if(minusProduct === -1){
             return
@@ -21,6 +21,7 @@ export function minusFromCart(){
             cart.splice(minusProduct, 1)
          }
          localStorage.setItem('cart', JSON.stringify(cart))
+         window.location.reload();
         })
     })
 }

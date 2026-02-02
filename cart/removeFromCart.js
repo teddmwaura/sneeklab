@@ -15,6 +15,8 @@ export function removeFromCart(){
             localStorage.setItem('cart', JSON.stringify(cart)) 
           
             window.location.reload();
+
+            alert('product removed successfully')
          }) 
         }) 
     }

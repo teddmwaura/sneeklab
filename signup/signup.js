@@ -39,6 +39,7 @@ function signuPProcessHtml() {
 
       if (userExists) {
         reject(`${userName}, you already signed up. Proceed to login.`);
+        window.location.href="login.html";
         return;
       }
 
@@ -79,7 +80,7 @@ async function runAuthenticationFlow() {
     hideMessage(600);
     await wait(600);
 
-    showMessage("Data saved successfully");
+    showMessage(`data saved, welcome ${userName}`);
     await wait(3000);
     hideMessage(600);
 

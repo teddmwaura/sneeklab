@@ -5,6 +5,8 @@ import { swiperJsHtml } from "./handleSwiperMovt.js";
 import { updateUserName } from "./updateUserName.js";
 import { handleToggleButton } from "./toggleMenuBar.js";
 import { searchProductJs } from "./searchProduct.js";
+import { logoutJs } from "../signup/logout.js";
+
 
 swiperJsHtml();
 toggleListItems();
@@ -13,3 +15,4 @@ handleSmoothScroll();
 updateUserName()
 handleToggleButton()
 searchProductJs()
+logoutJs()

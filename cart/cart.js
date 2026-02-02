@@ -74,6 +74,7 @@ export function addToCart() {
           color,
           quantity: 1
         });
+        alert('product added!')
       }
 
       localStorage.setItem('cart', JSON.stringify(cart));

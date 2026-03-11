@@ -25,7 +25,8 @@ function handleCheckoutProcess() {
       loggedInUser?.userName || nameInput?.value.trim();
 
     if (!customerName) {
-      alert("Please enter your name.");
+      alert("Please login first.");
+      window.location.href="login.html";
       return;
     }
 

@@ -1,3 +1,4 @@
+import { showMessage } from "../scripts/showMessage.js";
 export function removeFromCart(){ 
     const cart = JSON.parse(localStorage.getItem('cart')) || []; 
     const deleteButtons = document.querySelectorAll('.remove-from-cart')
@@ -16,7 +17,7 @@ export function removeFromCart(){
           
             window.location.reload();
 
-            alert('product removed successfully')
+            showMessage('product removed successfully', 'success')
          }) 
         }) 
     }

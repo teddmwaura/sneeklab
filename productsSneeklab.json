@@ -2,87 +2,533 @@
 
 [
   {
-    "productId": 12345,
+    "productId": "1234AFDTGJDU5",
     "productName": "raised converse",
-    "productPrice": 1500,
-    "productImage": "https://www.converse.in/media/catalog/product/m/7/m7650c_a_107x1_1.jpg",
-    "productColor": "white"
+    "productImage": "https://www.converse.sg/media/catalog/product/0/8/0883-CONM7650COPT013-1.jpg",
+    "productColor": [
+      {
+        "name": "white",
+        "productImage": "https://www.converse.sg/media/catalog/product/0/8/0883-CONM7650COPT013-1.jpg",
+        "productPrice": 1700
+      },
+            {
+        "name": "red",
+        "productImage": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwa8371a70/images/a_08/A18997C_A_08X1.jpg?sw=406&strip=false",
+        "productPrice": 1700
+      },
+            {
+        "name": "blue",
+        "productImage": "https://converse.static.n7.io/media/catalog/product/cache/c2eb1f0db702462ce5dab3d57b75c6e4/m/9/m9622_e_107x1378.jpg",
+        "productPrice": 1700
+      }
+      ,
+            {
+        "name": "white b",
+        "productImage": "https://www.brandsdemocracy.com/cdn/shop/products/converse_chuck-taylo-allstar-black_M9160_A_107X1_2.jpg?v=1657799344&width=1400",
+        "productPrice": 1700
+      }
+      ,
+            {
+        "name": "black",
+        "productImage": "https://www.topsandbottomsusa.com/cdn/shop/files/M3310_A_107X1-521522_8700189c-f252-49e2-af76-3064f2700a64.png?v=1762605461&width=2048",
+       "productPrice": 1700
+      }
+      ,
+            {
+        "name": "leather",
+        "productImage": "https://f.nooncdn.com/p/pzsku/ZED83FEFDDD7CF6CEE8CAZ/45/1762348784/edf8ef55-4893-4a70-8784-fcc6e3f9671c.jpg?width=480",
+        "productPrice": 1700
+      }
+    ]
   },
-  {
-    "productId": 223456,
-    "productName": "all black raised converse",
-    "productPrice": 1200,
-    "productImage": "https://d3d71ba2asa5oz.cloudfront.net/12036969/images/mens%20converse%20chuck%20taylor%20all%20star%20black%20hi%20top%20lace%20up%20(2).jpg",
-    "productColor": "black"
+    {
+    "productId": "666ADGHB7543",
+    "productName": "flat converse",
+    "productImage": "https://landaustore.co.uk/cdn/shop/files/ConverseMensShoesOxLowMonoBlackCanvas1.jpg?v=1740775465&width=375",
+    "productColor": [
+      {
+        "name": "white",
+        "productImage": "https://insport.com.au/cdn/shop/files/17652_0.jpg?v=1759467795",
+        "productPrice": 1500
+      },
+            {
+        "name": "black",
+        "productImage": "https://landaustore.co.uk/cdn/shop/files/ConverseMensShoesOxLowMonoBlackCanvas1.jpg?v=1740775465&width=375",
+        "productPrice": 1500
+      },
+            {
+        "name": "red",
+        "productImage": "https://i.ebayimg.com/00/s/MTQ5MFgxNjAw/z/3L4AAOSwj2Zj0bYd/$_57.JPG?set_id=8800005007",
+        "productPrice": 1500
+      }
+      ,
+            {
+        "name": "white b",
+        "productImage": "https://www.side-step.co.za/media/catalog/product/cache/ead79d362eadd98297170252f181cb50/a/l/all88b-all_star-canvas_black-m9166-v1_jpg.jpg",
+        "productPrice": 1500
+      }
+      ,
+            {
+        "name": "blue",
+        "productImage": "https://images.asos-media.com/products/converse-chuck-taylor-all-star-ox-sneakers-in-navy/204108957-1-navy?$n_750w$&wid=750&hei=750&fit=crop",
+        "productPrice": 1500
+      }
+      ,
+            {
+        "name": "leather",
+        "productImage": "https://d2ob0iztsaxy5v.cloudfront.net/product/192286/1922867020_zm.jpg",
+        "productPrice": 1500
+      }
+    ]
   },
-  {
-    "productId": 56893,
-    "productName": "double sole black converse",
-    "productPrice": 1350,
-    "productImage": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dw43a87537/images/a_08/560845C_A_08X1.jpg?sw=406&strip=false",
-    "productColor": "black"
+    {
+    "productId": "678ABCD908",
+    "productName": "Vans",
+    "productImage": "https://www.alpinebeach.com.au/cdn/shop/products/VANS_OLD_SKOOL_SHOE_BLK_WHT_01.jpg?v=1678768151",
+    "productColor": [
+      {
+        "name": "white",
+        "productImage": "https://cdn.runrepeat.com/storage/gallery/product_primary/26586/vans-authentic-lab-review-20893754-720.webp",
+        "productPrice": 1800
+      },
+            {
+        "name": "black",
+        "productImage": "https://www.alpinebeach.com.au/cdn/shop/products/VANS_OLD_SKOOL_SHOE_BLK_WHT_01.jpg?v=1678768151",
+        "productPrice": 1800
+      },
+            {
+        "name": "red",
+        "productImage": "https://www.iconsofsurf.com/cdn/shop/files/authenticsred_1.jpg?v=1692972819",
+        "productPrice": 1800
+      }
+      ,
+            {
+        "name": "black b",
+        "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjAbV3KnK3c0AApKPL2bG5kQf6GbMVRMYJA&s",
+        "productPrice": 1800
+      }
+      ,
+            {
+        "name": "green",
+        "productImage": "https://www.workingclassheroes.co.uk/images/products/V/VN/vn0a2z2zy9h804.jpg?width=1998&height=1998&quality=85&mode=pad&format=webp&bgcolor=ffffff",
+        "productPrice": 1800
+      }
+      ,
+            {
+        "name": "checked",
+        "productImage": "https://photos6.spartoo.eu/photos/124/12434195/12434195_1200_A.jpg",
+        "productPrice": 1800
+      },
+      {
+        "name": "red b",
+        "productImage": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/1839623/1.jpg?2081",
+        "productPrice": 1800
+      }
+
+    ]
   },
-  {
-    "productId": 690874,
-    "productName": "flat brown converse",
-    "productPrice": 1100,
-    "productImage": "https://www.famousfootwear.com/blob/product-images/20000/18/03/0/18030_pair_feed1000.jpg",
-    "productColor": "brown"
+    {
+    "productId": "4567ZFGDV789",
+    "productName": "Casual shoes",
+    "productImage": "https://lanxshoes.com/cdn/shop/files/lanx-ancoats-navy-leather-sneakers-2.jpg?v=1770636898",
+    "productColor": [
+      {
+        "name": "black",
+        "productImage": "https://lanxshoes.com/cdn/shop/files/lanx-ancoats-navy-leather-sneakers-2.jpg?v=1770636898",
+        "productPrice": 2000
+      },
+            {
+        "name": "brown",
+        "productImage": "https://lanxshoes.com/cdn/shop/files/ancoats-caramel-brown-derby-boot-2.webp?v=1770635687&width=720",
+       "productPrice": 2000
+      }
+      ,
+            {
+        "name": "blue",
+        "productImage": "https://assets.myntassets.com/assets/images/2024/AUGUST/1/Rwg5uFiT_30a1a593e7d14e308074884b302fd87a.jpg",
+        "productPrice": 2000
+      }
+
+    ]
   },
-  {
-    "productId": 6909653,
-    "productName": "raised light green converse",
-    "productPrice": 1400,
-    "productImage": "https://i.ebayimg.com/images/g/fJ8AAOSwSUpmp9Zd/s-l1200.jpg",
-    "productColor": "light green"
-  },
-  {
-    "productId": 2234908,
-    "productName": "blue raised converse",
-    "productPrice": 1250,
-    "productImage": "https://converse.static.n7.io/media/catalog/product/cache/c2eb1f0db702462ce5dab3d57b75c6e4/m/9/m9622_e_107x1378.jpg",
-    "productColor": "blue"
-  },
-  {
-    "productId": 1340987,
-    "productName": "red flat converse",
-    "productPrice": 1050,
-    "productImage": "https://images.journeys.com/images/products/1_4401_FS.JPG",
-    "productColor": "red"
-  },
-  {
-    "productId": 395890,
-    "productName": "leather black raised converse",
-    "productPrice": 1600,
-    "productImage": "https://i.pinimg.com/236x/f2/94/d8/f294d80adc0e8bb18e1cbaae851aec8d.jpg",
-    "productColor": "black"
-  },
-  {
-    "productId": 12345695,
-    "productName": "leather raised red converse",
-    "productPrice": 1550,
-    "productImage": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwa8371a70/images/a_08/A18997C_A_08X1.jpg?sw=406&strip=false",
-    "productColor": "red"
-  },
-  {
-    "productId": 223456750,
-    "productName": "white flat converse",
-    "productPrice": 1200,
-    "productImage": "https://tekkietown.co.za/cdn/shop/files/82b11495d7ce15202dc582c561a83f6a.jpg?v=1758192041&width=1445",
-    "productColor": "white"
-  },
-  {
-    "productId": 230976,
-    "productName": "flat black converse",
-    "productPrice": 1250,
-    "productImage": "https://cdn-images.farfetch-contents.com/15/94/17/22/15941722_54786867_600.jpg",
-    "productColor": "black"
-  },
-  {
-    "productId": 230977,
-    "productName": "flat double sole black converse",
-    "productPrice": 1450,
-    "productImage": "https://skipperbar.co.za/media/catalog/product/cache/8e71962534cb112d3996d77af375c1d8/a/l/all779b-converse-all-star-black-560250c-v1_jpg.jpg",
-    "productColor": "black"
+    {
+    "productId": "908THYSH021",
+    "productName": "beige sneekers",
+    "productImage": "https://admin.mochishoes.com/product/71-383/660/71-383M16.jpg",
+    "productColor": [
+      {
+        "name": "white",
+        "productImage": "https://admin.mochishoes.com/product/71-383/660/71-383M16.jpg",
+        "productPrice": 1800
+      },
+            {
+        "name": "black",
+        "productImage": "https://i.pinimg.com/736x/55/de/be/55debe885eae86f654cc47c24cc044bd.jpg",
+        "productPrice": 1800
+      },
+            {
+        "name": "brown w",
+        "productImage": "https://cdn.dsmcdn.com/ty1637/prod/QC/20250213/11/f4724490-8fe0-3463-a0e4-e8ffa22e0157/1_org_zoom.jpg",
+        "productPrice": 1800
+      }
+      
+    ]
   }
+  ,
+    {
+    "productId": "DVFGT78903H",
+    "productName": "Sport sneekers",
+    "productImage": "https://img.kwcdn.com/product/fancy/b78ea04d-bec9-4137-8612-f85adc8c167a.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
+    "productColor": [
+      {
+        "name": "blue",
+        "productImage": "https://i5.walmartimages.com/asr/5a15b922-6ec9-4416-9945-6627d6c0f63b.d346e1a0ac3b775c6a5ee85c00d7e34d.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+       "productPrice": 1200
+      },
+            {
+        "name": "black",
+        "productImage": "https://img.kwcdn.com/product/fancy/b78ea04d-bec9-4137-8612-f85adc8c167a.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
+       "productPrice": 1200
+      },
+            {
+        "name": "dark b",
+        "productImage": "https://i5.walmartimages.com/asr/f7ccb4ef-e85b-439e-b796-6eca2adf4cd4.fe0cb67514a8f745dd111e214c1d195e.jpeg",
+        "productPrice": 1200
+      },{
+        "name": "red",
+        "productImage": "https://i5.walmartimages.com/asr/6b02d6e6-0d4b-4c4a-9159-71bdc261d2a4.cf8d103cdfcdb6ed1a6190c861a9d3c0.jpeg",
+        "productPrice": 1200
+      },
+      {
+        "name": "white",
+        "productImage": "https://img.joomcdn.net/7ecf125ac1d7af96c0982e94d144e061a37c7f44_original.jpeg",
+        "productPrice": 1200
+      }
+      
+    ]
+  }
+  ,
+    {
+    "productId": "£$HFGYD78963",
+    "productName": "Adidas",
+    "productImage": "https://www.consortium.co.uk/media/catalog/product/cache/1/small_image/790x/040ec09b1e35df139433887a97daa66f/a/d/adidas-originals-handball-spezial-focus-olive-violet-tone-gum-ji2650_0002_6.jpg",
+    "productColor": [
+      {
+        "name": "white b",
+        "productImage": "https://res.cloudinary.com/dbepcxgu9/image/upload/v1747468844/products/adidas-samba-double-sole_rs0.webp",
+        "productPrice": 1900
+      },
+            {
+        "name": "black",
+        "productImage": "https://omarjee.mu/wp-content/uploads/2021/06/1.png",
+        "productPrice": 1900
+      },
+        {
+        "name": "green b",
+        "productImage": "https://www.consortium.co.uk/media/catalog/product/cache/1/small_image/790x/040ec09b1e35df139433887a97daa66f/a/d/adidas-originals-handball-spezial-focus-olive-violet-tone-gum-ji2650_0002_6.jpg",
+       "productPrice": 1900
+      },{
+        "name": "black b",
+        "productImage": "https://eliteluxe.co.ke/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-18-at-14.07.44_313047bf.jpg",
+        "productPrice": 1900
+      },
+      {
+        "name": "white",
+        "productImage": "https://www.titus-shop.com/cdn/shop/files/superstar_adv_white-coreblack-white_vorderansicht.jpg?crop=center&height=1200&v=1736959746&width=1200",
+        "productPrice": 1900
+      }
+      
+    ]
+  }
+    ,
+    {
+    "productId": "OPJGH8964$",
+    "productName": "AirForce",
+    "productImage": "https://i5.walmartimages.com/seo/Nike-Mens-Air-Force-1-07-Basketball-Shoes-10_a5c7f13d-3164-48a1-ac52-22de7a6da6f0.21b14c619853c5c591d311611ff03d47.jpeg",
+    "productColor": [
+      {"name" :"red w",
+        "productImage": "https://limitedsupply.co.za/cdn/shop/files/image_6c2ebd95-9995-4d91-b6c1-3cd66a2e0ca2_webp_1200x1200.webp?v=1697572837",
+    "productPrice": 2500
+      },
+            {
+        "name": "Brown",
+        "productImage": "https://i5.walmartimages.com/seo/Nike-Mens-Air-Force-1-07-Basketball-Shoes-10_a5c7f13d-3164-48a1-ac52-22de7a6da6f0.21b14c619853c5c591d311611ff03d47.jpeg",
+       "productPrice": 2500
+      },
+            {
+        "name": "black",
+        "productImage": "https://www.overkillshop.com/cdn/shop/files/IM3078-001_4.jpg?v=1758022635&width=2000",
+        "productPrice": 2500
+      },{
+        "name": "white b",
+        "productImage": "https://www.footasylum.com/images/products/large/4088659.jpg",
+        "productPrice": 2500
+      },
+      {
+        "name": "white",
+        "productImage": "https://imagescdn.simons.ca/images/5821-8959-10-A1_2/air-force-1-07-sneakers-women.jpg?__=13",
+        "productPrice": 2500
+      },
+      {
+        "name": "red",
+        "productImage": "https://extrabutterny.com/cdn/shop/products/CW6999-600-1_grande.jpg?v=1637177439",
+        "productPrice": 2500
+      }
+      
+    ]
+  }
+   ,
+    {
+    "productId": "TGUD9765/98-346",
+    "productName": "AirMax",
+    "productImage": "https://storage.googleapis.com/urbantreks/products/air-max-90-grey.webp",
+    "productColor":[
+      {
+        "name" :"white",
+        "productImage": "https://cdn.flightclub.com/TEMPLATE/269447/1.jpg",
+        "productPrice": 3000
+      },
+            {
+        "name": "Black",
+        "productImage": "https://i.ebayimg.com/images/g/12sAAOSwiT5i~FUd/s-l1200.jpg",
+        "productPrice": 3000
+      },
+            {
+        "name": "grey",
+        "productImage": "https://storage.googleapis.com/urbantreks/products/air-max-90-grey.webp",
+        "productPrice": 3000
+      },{
+        "name": "white y",
+        "productImage": "https://mybigorder.com/public/uploads/all/rzOC6MdLwBempOsbeN0CRMjJjfJbFD5PfDilMif6.jpg",
+        "productPrice": 3000
+      },
+      {
+        "name": "white b",
+        "productImage": "https://cdn.media.amplience.net/i/office/1363118131_sd1.jpg?$newhighres$&fmt=auto&qlt=default&fmt.jpeg.interlaced=true",
+    "productPrice": 3000
+      },
+      {
+        "name": "grey b",
+        "productImage": "https://i8.amplience.net/i/jpl/jd_773086_a?qlt=92&w=600&h=425&v=1&fmt=auto",
+        "productPrice": 3000
+      }
+      
+    ]
+  }
+  ,
+    {
+    "productId": "ASRTH908736@8",
+    "productName": "AirMax Plus",
+    "productImage": "https://res.cloudinary.com/dbepcxgu9/image/upload/v1722444494/products/nike-air-max-plus.webp",
+    "productColor":[
+
+      { "name" :"white",
+        "productImage": "https://sfos.uk/cdn/shop/files/NikeAirMaxPlus3TripleWhite1.png",
+        "productPrice": 3800
+      },
+            {
+        "name": "Black",
+        "productImage": "https://res.cloudinary.com/dbepcxgu9/image/upload/v1722444494/products/nike-air-max-plus.webp",
+        "productPrice": 3800
+      },
+            {
+        "name": "black b",
+        "productImage": "https://cop-room.com/cdn/shop/files/Nike-Air-Max-Plus-Premium-Black-Racer-Blue.jpg?v=1720170396",
+        "productPrice": 3800
+      },{
+        "name": "black g",
+        "productImage": "https://cdn.shopify.com/s/files/1/0603/3031/1875/files/main-square_aa3ba5b4-0696-44a6-85a2-8b7a97cdc46c_1080x.jpg?=75&v=1708106058",
+       "productPrice": 3800
+      },
+      {
+        "name": "grey b",
+        "productImage": "https://flowerkickz.gr/cdn/shop/files/flowerkickz-Air_Max_Plus_Black_Metallic_Silver-DM0032-003.jpg?v=1733118782",
+        "productPrice": 3800
+      }
+      
+    ]
+  } ,
+    {
+    "productId": "87645ASFSG87",
+    "productName": "official shoes",
+    "productImage": "https://luxemancollection.co.ke/wp-content/uploads/2024/08/Brown_Leather-Lace-Up_Formal_Shoes.webp",
+    "productColor":[
+
+      { "name" :"brown",
+        "productImage": "https://luxemancollection.co.ke/wp-content/uploads/2024/08/Brown_Leather-Lace-Up_Formal_Shoes.webp",
+        "productPrice": 3000
+      },
+            {
+        "name": "Blue",
+        "productImage": "https://storage.googleapis.com/urbantreks/products/versace-slipon-shoes_rm7.webp",
+        "productPrice": 3000
+      },
+            {
+        "name": "leather",
+        "productImage": "https://seeandwear.com/cdn/shop/files/PureLeatherformalshoesformen-PhotoRoom.jpg?v=1703929367",
+        "productPrice": 3000
+      },{
+        "name": "blue",
+        "productImage": "https://www.ndure.com/cdn/shop/files/1_2bd6cfe4-096c-4906-a19e-d71a6f66ef9f.jpg?v=1752840509",
+        "productPrice": 3000
+      },
+      {
+        "name": "brown l",
+        "productImage": "https://www.blossomshoe.co.ke/_next/image?url=https%3A%2F%2Fblossom.nillavee.co.ke%2F%2Fimgs%2Fproducts%2Fempire-official.webp&w=1080&q=75",
+        "productPrice": 3000
+      }
+      
+    ]
+  } ,
+    {
+    "productId": "AVBER90853%",
+    "productName": "sandals(men)",
+    "productImage": "https://elpaso.in/cdn/shop/files/1713007997201-d74f40b314ae40dc-E6B666B7DDBE40C020AB48D909816817_bfe7dbd3-eb41-4d4a-85f6-10d2772fadce.jpg?v=1713183660&width=1920",
+    "productColor":[
+
+      { "name" :"grey",
+        "productImage": "https://www.moshulu.co.uk/images/mens-cork-footbed-clogs-p2827-200189_thumb.jpg",
+        "productPrice": 500
+      },
+            {
+        "name": "l green",
+        "productImage": "https://elpaso.in/cdn/shop/files/1713007997201-d74f40b314ae40dc-E6B666B7DDBE40C020AB48D909816817_bfe7dbd3-eb41-4d4a-85f6-10d2772fadce.jpg?v=1713183660&width=1920",
+        "productPrice": 500
+      },
+            {
+        "name": "black",
+        "productImage": "https://www.walkaroo.in/cdn/shop/files/01_98fecd34-8e4a-4146-8aba-653ad1eee131.jpg?v=1753516329",
+        "productPrice": 700
+      },{
+        "name": "brown",
+        "productImage": "https://assets.manufactum.de/p/204/204551/204551_01.jpg/mens-leather-sandal.jpg?w=400&scale.option=fill&h=0&canvas.aspectratio=1%3A1&canvas.width=100.0000%25&canvas.height=167.7852%25&q=90",
+        "productPrice": 600
+      },
+      {
+        "name": "leather",
+        "productImage": "https://i5.walmartimages.com/seo/Fsqjgq-Men-Sandals-Walking-Mens-Closed-Toe-Sandal-Wide-Casual-Shoes-Breathable-Men-s-Leather-Summer-Outdoor-Beach-sandals-Slide-Size-12_197aed78-9bbc-4648-8d20-43202b79371a.025578016b96b07c3fdff50aadd9c2bc.jpeg",
+        "productPrice": 1100
+      },
+      {
+        "name": "black",
+        "productImage": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/SearchINT/Lge/AL1329.jpg?im=Resize,width=450",
+        "productPrice": 300
+      }
+      
+    ]
+  } ,
+    {
+    "productId": "$£AVSFGDT8907",
+    "productName": "sandals(women)",
+    "productImage": "https://media2.newlookassets.com/i/newlook/915126018/womens/footwear/shoes/tan-brown-multi-strap-flat-sandals.jpg?strip=true&qlt=50&w=720",
+    "productColor":[
+
+      { "name" :"black",
+        "productImage": "https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/SearchINT/Lge/AL5766.jpg?im=Resize,width=450",
+        "productPrice": 400
+      },
+            {
+        "name": "brown",
+        "productImage": "https://5.imimg.com/data5/SELLER/Default/2024/4/413156095/YB/BV/VH/161863429/einfarbige-trendige-damensandalen-leichte-schuhe-mit-kno-chelschnalle-und-kreuzriemen-rutschfeste-flache-slingback-schuhe-1-500x500.jpeg",
+        "productPrice": 600
+      },
+            {
+        "name": "brown",
+        "productImage": "https://media2.newlookassets.com/i/newlook/915126018/womens/footwear/shoes/tan-brown-multi-strap-flat-sandals.jpg?strip=true&qlt=50&w=720",
+        "productPrice": 700
+      },{
+        "name": "brown",
+        "productImage": "https://assets.manufactum.de/p/204/204551/204551_01.jpg/mens-leather-sandal.jpg?w=400&scale.option=fill&h=0&canvas.aspectratio=1%3A1&canvas.width=100.0000%25&canvas.height=167.7852%25&q=90",
+        "productPrice": 600
+      },
+      {
+        "name": "black",
+        "productImage": "https://i5.walmartimages.com/seo/New-Fashion-Gold-Metal-Chain-Ladies-Flat-Slides-Slippers-Outdoor-Sandalias-Mujer-Beach-Footwear-Women-PU-Casual-Shoes-Sandals-Black-7_f2dc041c-0f90-48fe-99a5-6296d0553a9d.22b4627c0f7b79da23d35f9cdd0a0cd1.jpeg",
+        "productPrice": 700
+      },
+      {
+        "name": "maasai",
+        "productImage": "https://i5.walmartimages.com/seo/Aueoeo-Womens-Sandals-Womens-Summer-Casual-Sandals-Comfortable-Flip-Flops-for-Women-Flat-Bottom-Beach-Sandals-Slippers_c0f7989e-9be6-4840-8444-6e4c7fa68691.86a4dac6768271fee1451bf0a1e446d5.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+        "productPrice": 500
+      }
+      
+    ]
+  },
+    {
+    "productId": "12M<>??//hkjhu1243",
+    "productName": "watches(men)",
+    "productImage": "https://www.juwelierhaesevoets.be/files/Product/overview/jaeger-lecoultre-q1238420-jlc-master-ultra-thin-date.jpg",
+    "productColor":[
+
+      { "name" :"s.black",
+        "productImage": "https://www.juwelierhaesevoets.be/files/Product/overview/jaeger-lecoultre-q1238420-jlc-master-ultra-thin-date.jpg",
+        "productPrice": 400
+      },
+            {
+        "name": "black",
+        "productImage": "https://cdn.fynd.com/v2/falling-surf-7c8bb8/fyprod/wrkr/products/pictures/item/free/original/armani-exchange/AX7162SET/0/9ZkNHwSF7R-AX7162SET-3P-1.jpg",
+        "productPrice": 400
+      },
+            {
+        "name": "silver b",
+        "productImage": "https://www.bobswatches.com/rolex-blog/wp-content/uploads/2019/10/Screen-Shot-2021-03-17-at-3.17.36-PM.jpg",
+        "productPrice": 700
+      },{
+        "name": "brown",
+        "productImage": "https://www.kamalwatch.com/cdn/shop/products/A1876.webp?v=1685422534",
+        "productPrice": 350
+      },
+      {
+        "name": "silver",
+        "productImage": "https://calvinklein.scene7.com/is/image/CalvinKlein/LW000466_300_main",
+        "productPrice": 400
+      },
+      {
+        "name": "s. brown",
+        "productImage": "https://kqdutyfree.com/media/catalog/product/w/m/wm389_reflex_watch_serrie_15_update.jpg",
+        "productPrice": 500
+      }
+      
+    ]
+  },
+    {
+    "productId": "12£££%^%^hjgui9093",
+    "productName": "watches(women)",
+    "productImage": "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/10654714/2023/12/8/01f7a338-134a-4df0-acb2-eea085d2c3151702013063198FossilWomenSilver-TonedAnalogueWatchES46491.jpg",
+    "productColor":[
+
+      { "name" :"pink",
+        "productImage": "https://i.pinimg.com/736x/03/c6/83/03c6834003bfc197f5a203372b6f581c.jpg",
+        "productPrice": 300
+      },
+            {
+        "name": "silver",
+        "productImage": "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/10654714/2023/12/8/01f7a338-134a-4df0-acb2-eea085d2c3151702013063198FossilWomenSilver-TonedAnalogueWatchES46491.jpg",
+        "productPrice": 400
+      },
+            {
+        "name": "pink s",
+        "productImage": "https://i.gadgets360cdn.com/large/Flipkart_watches_for_women_under_Rs_500_1510054594666.jpg?downsize=412:*",
+        "productPrice": 400
+      },{
+        "name": "brown",
+        "productImage": "https://www.purpink.co.ke/cdn/shop/files/10_4899SVTTSide.png?v=1769172364&width=1024",
+        "productPrice": 350
+      },
+      {
+        "name": "pink",
+        "productImage": "https://s.alicdn.com/@sc04/kf/H46b4f23d3699449b9e3e9cf3e840decaJ.jpg",
+        "productPrice": 400
+      },
+      {
+        "name": "white",
+        "productImage": "https://kqdutyfree.com/media/catalog/product/w/l/wl402.png",
+        "productPrice": 500
+      }
+      
+    ]
+  }
+  
+  
+  
 ]

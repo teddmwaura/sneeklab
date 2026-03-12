@@ -22,13 +22,24 @@
         <a href="index.html">SneekLab</a>
       </h1>
     </div>
+
+
+      <div class="relative">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        <div class="absolute -top-2 -right-2 text-green-500 text-xs update-cart-quantity-icon">0</div>
+      </div>
   </nav>
 
   <!-- Content -->
-  <section class="sm:px-6 lg:px-10">
+  <section class="sm:px-6 lg:px-10"  data-aos="fade-left">
     <div class="grid items-center justify-center  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 pt-16 grid-contain-html">
-      <!-- JS injects product description here -->
-    </div>
+    
+  </div>
+
+ <div class="hidden fixed inset-0 flex items-center justify-center bg-green-300/40 z-50 text-xl transition-all duration-500 ease-in div-container-error">
+     <div class="p-6 bg-white text-black transition-all duration-500 ease-in  div-container-display">Please enter size and color</div>
+  </div>
+          
   </section>
 
 </body>

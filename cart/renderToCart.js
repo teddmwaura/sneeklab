@@ -23,10 +23,10 @@ export function renderToCart(){
         <h2>Ksh ${cartItem.productPrice}</h2>
     </div>
        <div>
-        <h2>${cartItem.color}</h2>
+        <h2>${cartItem.productColor}</h2>
     </div>
        <div>
-        <h2>${cartItem.size}</h2>
+        <h2>${cartItem.productSize}</h2>
     </div>
 <div class="flex">
   <h2 

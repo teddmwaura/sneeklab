@@ -6,7 +6,7 @@ import { updateUserName } from "./updateUserName.js";
 import { handleToggleButton } from "./toggleMenuBar.js";
 import { searchProductJs } from "./searchProduct.js";
 import { logoutJs } from "../signup/logout.js";
-
+import { initialiseAnimationJs } from "./initialiseAnimation.js";
 
 swiperJsHtml();
 toggleListItems();
@@ -16,3 +16,4 @@ updateUserName()
 handleToggleButton()
 searchProductJs()
 logoutJs()
+initialiseAnimationJs()

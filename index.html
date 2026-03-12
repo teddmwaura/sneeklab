@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="styles.css" />
   <title>SneekLab</title>
 </head>
@@ -119,11 +119,11 @@
 </section>
 
 <!-- ================= PRODUCTS ================= -->
-<section id="products" class="py-16 px-4">
+<section id="products" class="py-16 px-4"  data-aos="fade-right">
   <h2 class="text-3xl text-center mb-4">Our Converse Collection</h2>
   <p class="text-center text-gray-500 mb-10">Check out our latest products</p>
 
-  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 products-container-html"></div>
+  <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 products-container-html"></div>
 
   <div class="hidden fixed inset-0 flex items-center justify-center bg-black/40 z-50 div-container-error">
     <div class="bg-white p-6 rounded shadow">
@@ -133,7 +133,7 @@
 </section>
 
 <!-- ================= SERVICES ================= -->
-<section id="services" class="bg-[#efefef] py-16 px-4">
+<section id="services" class="bg-[#efefef] py-16 px-4" data-aos="fade-up">
   <h2 class="text-3xl text-center mb-6">Our Services</h2>
 
   <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -160,7 +160,7 @@
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section id="about" class="py-16 px-4 bg-gray-50">
+<section id="about" class="py-16 px-4 bg-gray-50"data-aos="fade-left" >
   <div class="max-w-5xl mx-auto text-center">
     <h2 class="text-3xl mb-6">About Us</h2>
     <p class="text-gray-600 mb-10">
@@ -193,7 +193,7 @@
 </section>
 
 <!-- ================= NEWS ================= -->
-<section id="news" class="bg-[#efefef] py-16 px-4">
+<section id="news" class="bg-[#efefef] py-16 px-4" data-aos="fade-down">
   <h2 class="text-3xl text-center mb-6">Latest News</h2>
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
     
@@ -223,7 +223,7 @@
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer id="contact" class="bg-black text-white py-12 px-4">
+<footer id="contact" class="bg-black text-white py-12 px-4" data-aos="fade-up">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
     <div>
       <h2 class="text-xl mb-2">SneekLab</h2>
@@ -261,6 +261,7 @@
   </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="module" src="scripts/scripts.js"></script>
 <script type="module" src="products/appendProductToMain.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

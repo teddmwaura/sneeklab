@@ -11,8 +11,8 @@ export function displayItems(){
           alt=""/>
         <div>
         <p><strong>Product Name:</strong> ${product.productName}</p>
-          <p><strong>Product Color:</strong> ${product.color}</p>
-          <p><strong>Product Size:</strong> ${product.size}</p>
+          <p><strong>Product Color:</strong> ${product.productColor}</p>
+          <p><strong>Product Size:</strong> ${product.productSize}</p>
           <p><strong>Product Quantity:</strong> ${product.quantity}</p>
           </div>
         `

@@ -1,6 +1,7 @@
 import { displayItems } from "./checkoutDisplay.js";
 import { calculateToCheckoutJs } from "./calculateToCheckout.js";
 import { updateUserName } from "../scripts/updateUserName.js";
+import { showMessage } from "../scripts/showMessage.js";
 
 /* ================= WHATSAPP SENDER ================= */
 function sendToWhatsApp(message) {
@@ -25,8 +26,8 @@ function handleCheckoutProcess() {
       loggedInUser?.userName || nameInput?.value.trim();
 
     if (!customerName) {
-      alert("Please login first.");
-      window.location.href="login.html";
+      showMessage('please login first', 'error')
+      window.location.href = 'signup.html'
       return;
     }
 
@@ -35,14 +36,14 @@ function handleCheckoutProcess() {
     const phoneRegex = /^(07\d{8}|01\d{8})$/;
 
     if (!phoneRegex.test(phoneNumber)) {
-      alert("Enter a valid Kenyan phone number.");
+     showMessage('please enter a valid phone number', 'error')
       return;
     }
 
     /* ---------- PICKUP POINT ---------- */
     const pickupPoint = document.querySelector(".pickup-point").value.trim();
     if (!pickupPoint) {
-      alert("Please enter pickup point.");
+      showMessage('please enter a pickup point', 'error')
       return;
     }
 
@@ -52,7 +53,7 @@ function handleCheckoutProcess() {
     );
 
     if (!deliveryOption) {
-      alert("Please select a delivery option.");
+      showMessage('please enter pickup point', 'error')
       return;
     }
 
@@ -65,7 +66,7 @@ function handleCheckoutProcess() {
     /* ---------- CART ---------- */
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     if (cart.length === 0) {
-      alert("Your cart is empty.");
+      showMessage('your cart is empty', '')
       return;
     }
 
@@ -122,7 +123,7 @@ Products Total: Ksh ${productsTotal}
     });
     localStorage.setItem("orders", JSON.stringify(orders));
 
-    alert("Order sent successfully! You will receive a call shortly.");
+    showMessage('Order sent successfully! You will receive a call shortly', error)
 
     /* ---------- CLEANUP ---------- */
     localStorage.removeItem("cart");
